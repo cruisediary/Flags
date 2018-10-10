@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/cocoapods/l/Comets.svg?style=flat)](http://cocoapods.org/pods/Comets)
 [![Platform](https://img.shields.io/cocoapods/p/Comets.svg?style=flat)](http://cocoapods.org/pods/Comets)
 
+![flags](README/flags.jpg)
+
 ## Usage
 ```swift
 let flag = Flag(countryCode: "SW")
