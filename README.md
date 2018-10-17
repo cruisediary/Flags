@@ -33,7 +33,7 @@ pod "Flags"
 
 ### Carthage
 ```
-github "cruisediary/Flags" ~> 0.2.0
+github "cruisediary/Flags" ~> 0.2.1
 ```
 
 ## ❤️ Contribution
