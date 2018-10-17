@@ -5,6 +5,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Comets.svg?style=flat)](http://cocoapods.org/pods/Comets)
 [![License](https://img.shields.io/cocoapods/l/Comets.svg?style=flat)](http://cocoapods.org/pods/Comets)
 [![Platform](https://img.shields.io/cocoapods/p/Comets.svg?style=flat)](http://cocoapods.org/pods/Comets)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ![flags](README/flags.jpg)
 
@@ -23,11 +24,16 @@ countryImage.image = flag?.image // 🇸🇪 to image
 Comets is written in  Xcode 10, Swift 4.2, iOS 8.0 Required
 
 ## 📲 Installation
-Comets is available through [Cocoapods](http://cocoapods.org)
+Comets is available through [Cocoapods](http://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage).
 
 ### Cocoapods
 ```ruby
 pod "Flags"
+```
+
+### Carthage
+```
+github "cruisediary/Flags" ~> 0.2.0
 ```
 
 ## ❤️ Contribution
