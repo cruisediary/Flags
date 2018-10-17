@@ -3,7 +3,7 @@ public struct Flag {
     
     let countryCode: String
     
-    init?(countryCode: String) {
+    public init?(countryCode: String) {
         guard NSLocale.isoCountryCodes.contains(countryCode) else { return nil }
         self.countryCode = countryCode
     }
