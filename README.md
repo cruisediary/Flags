@@ -2,16 +2,16 @@
 🇸🇪 Flag extension
 
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
-[![Version](https://img.shields.io/cocoapods/v/Comets.svg?style=flat)](http://cocoapods.org/pods/Comets)
-[![License](https://img.shields.io/cocoapods/l/Comets.svg?style=flat)](http://cocoapods.org/pods/Comets)
-[![Platform](https://img.shields.io/cocoapods/p/Comets.svg?style=flat)](http://cocoapods.org/pods/Comets)
+[![Version](https://img.shields.io/cocoapods/v/Comets.svg?style=flat)](http://cocoapods.org/pods/Flags)
+[![License](https://img.shields.io/cocoapods/l/Comets.svg?style=flat)](http://cocoapods.org/pods/Flags)
+[![Platform](https://img.shields.io/cocoapods/p/Comets.svg?style=flat)](http://cocoapods.org/pods/Flags)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ![flags](README/flags.jpg)
 
 ## Usage
 ```swift
-let flag = Flag(countryCode: "SW")
+let flag = Flag(countryCode: "SE")
 
 let countryLabel = UILabel()
 countryLabel.text = flag?.emoji // 🇸🇪
@@ -21,10 +21,10 @@ countryImage.image = flag?.image // 🇸🇪 to image
 ```
 
 ## Requirements
-Comets is written in  Xcode 10, Swift 4.2, iOS 8.0 Required
+Flags is written in  Xcode 10, Swift 4.2, iOS 8.0 Required
 
 ## 📲 Installation
-Comets is available through [Cocoapods](http://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage).
+Flags is available through [Cocoapods](http://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage).
 
 ### Cocoapods
 ```ruby
