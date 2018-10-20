@@ -3,6 +3,13 @@ language: objective-c
 xcode-project: Flags.xcworkspace
 xcode_scheme: Flags
 xcode_sdk: iphonesimulator12
+branches:
+  only:
+  - master 
+  - develop
+  - /^v[\d.]+$/
+  except:
+  - screenshot
 
 env:
   global:
