@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/Flags.svg?style=flat)](http://cocoapods.org/pods/Flags)
 [![Platform](https://img.shields.io/cocoapods/p/Flags.svg?style=flat)](http://cocoapods.org/pods/Flags)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Codecov](https://img.shields.io/codecov/c/github/cruisediary/Flags.svg)](https://codecov.io/gh/cruisediary/Flags)
 
 ![flags](README/flags.jpg)
 
@@ -33,7 +34,7 @@ pod "Flags"
 
 ### Carthage
 ```
-github "cruisediary/Flags" ~> 0.2.1
+github "cruisediary/Flags" ~> 0.3.0
 ```
 
 ## ❤️ Contribution
