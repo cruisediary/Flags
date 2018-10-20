@@ -1,18 +1,31 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
 osx_image: xcode10
 language: objective-c
 xcode-project: Flags.xcworkspace
 xcode_scheme: Flags
 xcode_sdk: iphonesimulator12
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
-script:
-- pod lib lint
-- xcodebuild -scheme 'Flags' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty -c
 
+env:
+  global:
+    - PROJECT="Flags.xcodeproj"
+    - SCHEME="Flags"
+    - IOS_SDK="iphonesimulator12.0"
+    - FRAMEWORK="Flags"
+  matrix:
+    - SDK="$IOS_SDK" DESTINATION="platform=iOS Simulator,name=iPhone 8,OS=12.0"
+
+before_script:
+  - set -o pipefail
+  - carthage update --cache-builds --platform iOS
+
+script:
+  - pod lib lint
+  - xcodebuild clean build test
+    -project "$PROJECT"
+    -scheme "$SCHEME"
+    -sdk "$SDK"
+    -destination "$DESTINATION"
+    -configuration Debug
+    -enableCodeCoverage YES
+    CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -X xcodeplist -J 'Flags';
