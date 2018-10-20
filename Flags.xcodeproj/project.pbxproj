@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FCF2F9DD217789F2003F958A /* Flags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2F9D3217789F2003F958A /* Flags.framework */; };
-		FCF2F9E2217789F2003F958A /* FlagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2F9E1217789F2003F958A /* FlagsTests.swift */; };
+		FCF2F9E2217789F2003F958A /* FlagSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2F9E1217789F2003F958A /* FlagSpec.swift */; };
 		FCF2F9E4217789F2003F958A /* Flags.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF2F9D6217789F2003F958A /* Flags.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCF2F9F121778A3C003F958A /* Flag+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2F9EE21778A3C003F958A /* Flag+Emoji.swift */; };
 		FCF2F9F221778A3C003F958A /* Flag+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2F9EF21778A3C003F958A /* Flag+UIImage.swift */; };
 		FCF2F9F321778A3C003F958A /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2F9F021778A3C003F958A /* Flag.swift */; };
+		FCF2FA7B217ABF26003F958A /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCF2FA79217ABF26003F958A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FCF2FA7C217ABF26003F958A /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCF2FA7A217ABF26003F958A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FCF2FA7E217ABF41003F958A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2FA7A217ABF26003F958A /* Nimble.framework */; };
+		FCF2FA7F217ABF41003F958A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2FA79217ABF26003F958A /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +29,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FCF2FA78217ABF10003F958A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FCF2FA7B217ABF26003F958A /* Quick.framework in CopyFiles */,
+				FCF2FA7C217ABF26003F958A /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FCF2F9D3217789F2003F958A /* Flags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF2F9D6217789F2003F958A /* Flags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flags.h; sourceTree = "<group>"; };
 		FCF2F9D7217789F2003F958A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCF2F9DC217789F2003F958A /* FlagsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlagsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCF2F9E1217789F2003F958A /* FlagsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsTests.swift; sourceTree = "<group>"; };
+		FCF2F9E1217789F2003F958A /* FlagSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagSpec.swift; sourceTree = "<group>"; };
 		FCF2F9E3217789F2003F958A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCF2F9EE21778A3C003F958A /* Flag+Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flag+Emoji.swift"; sourceTree = "<group>"; };
 		FCF2F9EF21778A3C003F958A /* Flag+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flag+UIImage.swift"; sourceTree = "<group>"; };
 		FCF2F9F021778A3C003F958A /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		FCF2FA79217ABF26003F958A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		FCF2FA7A217ABF26003F958A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF2FA7E217ABF41003F958A /* Nimble.framework in Frameworks */,
+				FCF2FA7F217ABF41003F958A /* Quick.framework in Frameworks */,
 				FCF2F9DD217789F2003F958A /* Flags.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,9 +81,12 @@
 		FCF2F9C9217789F2003F958A = {
 			isa = PBXGroup;
 			children = (
+				FCF2FA7A217ABF26003F958A /* Nimble.framework */,
+				FCF2FA79217ABF26003F958A /* Quick.framework */,
 				FCF2F9D5217789F2003F958A /* Flags */,
 				FCF2F9E0217789F2003F958A /* FlagsTests */,
 				FCF2F9D4217789F2003F958A /* Products */,
+				FCF2FA7D217ABF41003F958A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +112,7 @@
 		FCF2F9E0217789F2003F958A /* FlagsTests */ = {
 			isa = PBXGroup;
 			children = (
-				FCF2F9E1217789F2003F958A /* FlagsTests.swift */,
+				FCF2F9E1217789F2003F958A /* FlagSpec.swift */,
 				FCF2F9E3217789F2003F958A /* Info.plist */,
 			);
 			path = FlagsTests;
@@ -101,6 +126,13 @@
 				FCF2F9F021778A3C003F958A /* Flag.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		FCF2FA7D217ABF41003F958A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +174,7 @@
 				FCF2F9D8217789F2003F958A /* Sources */,
 				FCF2F9D9217789F2003F958A /* Frameworks */,
 				FCF2F9DA217789F2003F958A /* Resources */,
+				FCF2FA78217ABF10003F958A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -221,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCF2F9E2217789F2003F958A /* FlagsTests.swift in Sources */,
+				FCF2F9E2217789F2003F958A /* FlagSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +444,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FlagsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,6 +466,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FlagsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
