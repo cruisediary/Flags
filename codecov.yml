@@ -1,0 +1,8 @@
+ignore:
+  - "FlagsTests/"
+
+coverage:
+  status:
+    project: no
+    patch: no
+    changes: no
