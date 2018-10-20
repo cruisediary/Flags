@@ -2,9 +2,9 @@
 🇸🇪 Flag extension
 
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
-[![Version](https://img.shields.io/cocoapods/v/Comets.svg?style=flat)](http://cocoapods.org/pods/Flags)
-[![License](https://img.shields.io/cocoapods/l/Comets.svg?style=flat)](http://cocoapods.org/pods/Flags)
-[![Platform](https://img.shields.io/cocoapods/p/Comets.svg?style=flat)](http://cocoapods.org/pods/Flags)
+[![Version](https://img.shields.io/cocoapods/v/Flags.svg?style=flat)](http://cocoapods.org/pods/Flags)
+[![License](https://img.shields.io/cocoapods/l/Flags.svg?style=flat)](http://cocoapods.org/pods/Flags)
+[![Platform](https://img.shields.io/cocoapods/p/Flags.svg?style=flat)](http://cocoapods.org/pods/Flags)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ![flags](README/flags.jpg)
