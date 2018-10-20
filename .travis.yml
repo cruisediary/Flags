@@ -4,8 +4,8 @@
 
 osx_image: xcode10
 language: objective-c
-xcode-project: Pastel.xcworkspace
-xcode_scheme: Pastel
+xcode-project: Flags.xcworkspace
+xcode_scheme: Flags
 xcode_sdk: iphonesimulator12
 # cache: cocoapods
 # podfile: Example/Podfile
@@ -14,5 +14,5 @@ xcode_sdk: iphonesimulator12
 # - pod install --project-directory=Example
 script:
 - pod lib lint
-- xcodebuild -scheme 'Pastel' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty -c
+- xcodebuild -scheme 'Flags' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty -c
 
