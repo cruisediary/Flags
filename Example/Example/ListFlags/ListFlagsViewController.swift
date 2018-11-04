@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Flags
 import IGListKit
 import ReactorKit
+import RxCocoa
+import RxOptional
 import RxSwift
 import SnapKit
 
@@ -24,9 +27,13 @@ class ListFlagsViewController: UIViewController, View {
                               viewController: self,
                               workingRangeSize: 2)
         adapter.collectionView = collectionView
-        adapter.dataSource = self
+        adapter.rx
+            .setDataSource(dataSource)
+            .disposed(by: disposeBag)
         return adapter
     }()
+
+    let dataSource = DataSource()
 
     var collectionView: ListCollectionView = {
         let collectionView = ListCollectionView()
@@ -34,6 +41,7 @@ class ListFlagsViewController: UIViewController, View {
                                                                        topContentInset: 0,
                                                                        stretchToEdge: false)
         collectionView.isPrefetchingEnabled = false
+        collectionView.backgroundColor = .white
         collectionView.register(ListFlagCell.self,
                                 forCellWithReuseIdentifier: ListFlagCell.identifier)
         return collectionView
@@ -65,7 +73,17 @@ class ListFlagsViewController: UIViewController, View {
     }
 
     func bind(reactor: ListFlagsReactor) {
-        
+        searchBar.rx.text
+            .filterNil()
+            .map { Reactor.Action.typing(text: $0) }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+
+        reactor.state
+            .map { $0.countryCodes }
+            .map { $0.compactMap { FlagDiffable(flag: Flag(countryCode: $0)) } }
+            .bind(to: adapter.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
     }
 
     /*
@@ -78,25 +96,4 @@ class ListFlagsViewController: UIViewController, View {
     }
     */
 
-}
-
-extension ListFlagsViewController: ListAdapterDataSource {
-    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return []
-    }
-
-    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return ListSingleSectionController(
-            cellClass: ListFlagCell.self,
-            configureBlock: { _, _ in
-                // do nothing
-            },
-            sizeBlock: { _, _ -> CGSize in
-                return .zero
-            })
-    }
-
-    func emptyView(for listAdapter: ListAdapter) -> UIView? {
-        return nil
-    }
 }

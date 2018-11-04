@@ -1,7 +1,7 @@
 public struct Flag {
     static var size = CGSize(width: 40, height: 40)
     
-    let countryCode: String
+    public let countryCode: String
     
     public init?(countryCode: String) {
         guard NSLocale.isoCountryCodes.contains(countryCode.uppercased()) else { return nil }

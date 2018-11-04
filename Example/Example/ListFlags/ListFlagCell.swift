@@ -20,11 +20,14 @@ class ListFlagCell: UICollectionViewCell {
         return label
     }()
 
-    init() {
-        super.init(frame: .zero)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = .white
+
         addSubview(titleLabel)
         titleLabel.snp.makeConstraints { maker in
-            maker.leading.centerY.equalToSuperview()
+            maker.leading.equalToSuperview().offset(20.0)
+            maker.centerY.equalToSuperview()
         }
     }
 

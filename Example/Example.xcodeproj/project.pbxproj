@@ -19,6 +19,9 @@
 		FCD8FB06218EF7A800E20544 /* ListFlagsViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB05218EF7A800E20544 /* ListFlagsViewControllerSpec.swift */; };
 		FCD8FB08218EFC6E00E20544 /* ListFlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */; };
 		FCD8FB0A218EFE3F00E20544 /* ListFlagsReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB09218EFE3F00E20544 /* ListFlagsReactor.swift */; };
+		FCD8FB0C218F055E00E20544 /* RxIGListAdapterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB0B218F055E00E20544 /* RxIGListAdapterDataSource.swift */; };
+		FCD8FB0E218F060600E20544 /* ListFlagSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB0D218F060600E20544 /* ListFlagSectionController.swift */; };
+		FCD8FB10218F07C900E20544 /* ListFlagsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB0F218F07C900E20544 /* ListFlagsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		FCD8FB05218EF7A800E20544 /* ListFlagsViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsViewControllerSpec.swift; sourceTree = "<group>"; };
 		FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagCell.swift; sourceTree = "<group>"; };
 		FCD8FB09218EFE3F00E20544 /* ListFlagsReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsReactor.swift; sourceTree = "<group>"; };
+		FCD8FB0B218F055E00E20544 /* RxIGListAdapterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxIGListAdapterDataSource.swift; sourceTree = "<group>"; };
+		FCD8FB0D218F060600E20544 /* ListFlagSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagSectionController.swift; sourceTree = "<group>"; };
+		FCD8FB0F218F07C900E20544 /* ListFlagsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 				FCD8FAD5218EEFA500E20544 /* Assets.xcassets */,
 				FCD8FAD7218EEFA500E20544 /* LaunchScreen.storyboard */,
 				FCD8FADA218EEFA500E20544 /* Info.plist */,
+				FCD8FB0B218F055E00E20544 /* RxIGListAdapterDataSource.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -178,6 +185,8 @@
 				FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */,
 				FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */,
 				FCD8FB09218EFE3F00E20544 /* ListFlagsReactor.swift */,
+				FCD8FB0D218F060600E20544 /* ListFlagSectionController.swift */,
+				FCD8FB0F218F07C900E20544 /* ListFlagsModel.swift */,
 			);
 			path = ListFlags;
 			sourceTree = "<group>";
@@ -378,6 +387,8 @@
 				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -389,6 +400,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -404,10 +417,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD8FB0C218F055E00E20544 /* RxIGListAdapterDataSource.swift in Sources */,
 				FCD8FACF218EEFA400E20544 /* AppDelegate.swift in Sources */,
 				FCD8FB03218EF2DC00E20544 /* ListFlagsViewController.swift in Sources */,
 				FCD8FB0A218EFE3F00E20544 /* ListFlagsReactor.swift in Sources */,
+				FCD8FB10218F07C900E20544 /* ListFlagsModel.swift in Sources */,
 				FCD8FB08218EFC6E00E20544 /* ListFlagCell.swift in Sources */,
+				FCD8FB0E218F060600E20544 /* ListFlagSectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

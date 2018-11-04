@@ -10,6 +10,11 @@ PODS:
   - ReactorKit (1.2.1):
     - RxSwift (>= 4.0.0)
   - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxOptional (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
   - SnapKit (4.0.1)
@@ -20,6 +25,9 @@ DEPENDENCIES:
   - Nimble (= 7.3.1)
   - Quick (= 1.3.2)
   - ReactorKit (= 1.2.1)
+  - RxCocoa (= 4.4.0)
+  - RxOptional (= 3.5.0)
+  - RxSwift (= 4.4.0)
   - SnapKit (= 4.0.1)
 
 SPEC REPOS:
@@ -29,6 +37,8 @@ SPEC REPOS:
     - Quick
     - ReactorKit
     - RxAtomic
+    - RxCocoa
+    - RxOptional
     - RxSwift
     - SnapKit
 
@@ -43,9 +53,11 @@ SPEC CHECKSUMS:
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 62c9a3eb386d16ea3e5965e02d8e6c94a1ef999e
+PODFILE CHECKSUM: 1d88714b0b3b41d12952e04f4eed67603083b2e3
 
 COCOAPODS: 1.6.0.beta.1
