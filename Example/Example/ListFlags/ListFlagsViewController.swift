@@ -8,17 +8,25 @@
 
 import UIKit
 import IGListKit
+import ReactorKit
+import RxSwift
 import SnapKit
 
-class ListFlagsViewController: UIViewController {
-
+class ListFlagsViewController: UIViewController, View {
     var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         return searchBar
     }()
 
     // IGListKit
-    var adapter: ListAdapter!
+    lazy var adapter: ListAdapter = {
+        let adapter = ListAdapter(updater: ListAdapterUpdater(),
+                              viewController: self,
+                              workingRangeSize: 2)
+        adapter.collectionView = collectionView
+        adapter.dataSource = self
+        return adapter
+    }()
 
     var collectionView: ListCollectionView = {
         let collectionView = ListCollectionView()
@@ -30,16 +38,14 @@ class ListFlagsViewController: UIViewController {
                                 forCellWithReuseIdentifier: ListFlagCell.identifier)
         return collectionView
     }()
-    
+
+    // Rx
+
+    var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        adapter = ListAdapter(updater: ListAdapterUpdater(),
-                              viewController: self,
-                              workingRangeSize: 2)
-        adapter.collectionView = collectionView
-        adapter.dataSource = self
+        self.reactor = ListFlagsReactor()
 
         // Do any additional setup after loading the view.
         view.addSubview(searchBar)
@@ -58,6 +64,9 @@ class ListFlagsViewController: UIViewController {
         }
     }
 
+    func bind(reactor: ListFlagsReactor) {
+        
+    }
 
     /*
     // MARK: - Navigation

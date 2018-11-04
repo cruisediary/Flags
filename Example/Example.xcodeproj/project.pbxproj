@@ -18,6 +18,7 @@
 		FCD8FB03218EF2DC00E20544 /* ListFlagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */; };
 		FCD8FB06218EF7A800E20544 /* ListFlagsViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB05218EF7A800E20544 /* ListFlagsViewControllerSpec.swift */; };
 		FCD8FB08218EFC6E00E20544 /* ListFlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */; };
+		FCD8FB0A218EFE3F00E20544 /* ListFlagsReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB09218EFE3F00E20544 /* ListFlagsReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsViewController.swift; sourceTree = "<group>"; };
 		FCD8FB05218EF7A800E20544 /* ListFlagsViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsViewControllerSpec.swift; sourceTree = "<group>"; };
 		FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagCell.swift; sourceTree = "<group>"; };
+		FCD8FB09218EFE3F00E20544 /* ListFlagsReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */,
 				FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */,
+				FCD8FB09218EFE3F00E20544 /* ListFlagsReactor.swift */,
 			);
 			path = ListFlags;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			files = (
 				FCD8FACF218EEFA400E20544 /* AppDelegate.swift in Sources */,
 				FCD8FB03218EF2DC00E20544 /* ListFlagsViewController.swift in Sources */,
+				FCD8FB0A218EFE3F00E20544 /* ListFlagsReactor.swift in Sources */,
 				FCD8FB08218EFC6E00E20544 /* ListFlagCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
