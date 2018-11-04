@@ -12,4 +12,8 @@ class ListFlagUITests: UITestCase {
     func testSearchFieldExists() {
         XCTAssertTrue(app.searchFields.firstMatch.exists)
     }
+
+    func testCollectionViewExists() {
+        XCTAssertTrue(app.collectionViews.firstMatch.exists)
+    }
 }
