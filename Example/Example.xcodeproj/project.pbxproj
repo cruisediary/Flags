@@ -14,7 +14,7 @@
 		FCD8FAD6218EEFA500E20544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD5218EEFA500E20544 /* Assets.xcassets */; };
 		FCD8FAD9218EEFA500E20544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD7218EEFA500E20544 /* LaunchScreen.storyboard */; };
 		FCD8FAE4218EEFA500E20544 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAE3218EEFA500E20544 /* ExampleTests.swift */; };
-		FCD8FAEF218EEFA500E20544 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAEE218EEFA500E20544 /* ExampleUITests.swift */; };
+		FCD8FAFD218EF13B00E20544 /* UITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAFC218EF13B00E20544 /* UITestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		FCD8FAE3218EEFA500E20544 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		FCD8FAE5218EEFA500E20544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCD8FAEA218EEFA500E20544 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCD8FAEE218EEFA500E20544 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		FCD8FAF0218EEFA500E20544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD8FAFC218EF13B00E20544 /* UITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,6 @@
 				4F62B655BA5FF30DB80894B2 /* Pods-Example.debug.xcconfig */,
 				13F258F0A294ED06E54DA4B9 /* Pods-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,8 +143,8 @@
 		FCD8FAED218EEFA500E20544 /* ExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FCD8FAEE218EEFA500E20544 /* ExampleUITests.swift */,
 				FCD8FAF0218EEFA500E20544 /* Info.plist */,
+				FCD8FAFC218EF13B00E20544 /* UITestCase.swift */,
 			);
 			path = ExampleUITests;
 			sourceTree = "<group>";
@@ -357,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCD8FAEF218EEFA500E20544 /* ExampleUITests.swift in Sources */,
+				FCD8FAFD218EF13B00E20544 /* UITestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
