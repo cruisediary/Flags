@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IGListKit
 import SnapKit
 
 class ListFlagsViewController: UIViewController {
@@ -16,15 +17,42 @@ class ListFlagsViewController: UIViewController {
         return searchBar
     }()
 
+    // IGListKit
+    var adapter: ListAdapter!
+
+    var collectionView: ListCollectionView = {
+        let collectionView = ListCollectionView()
+        collectionView.collectionViewLayout = ListCollectionViewLayout(stickyHeaders: false,
+                                                                       topContentInset: 0,
+                                                                       stretchToEdge: false)
+        collectionView.isPrefetchingEnabled = false
+        return collectionView
+    }()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        adapter = ListAdapter(updater: ListAdapterUpdater(),
+                              viewController: self,
+                              workingRangeSize: 2)
+        adapter.collectionView = collectionView
+        adapter.dataSource = self
+
         // Do any additional setup after loading the view.
         view.addSubview(searchBar)
+        view.addSubview(collectionView)
+
         searchBar.snp.makeConstraints { maker in
             maker.leading.trailing.equalToSuperview()
             maker.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin)
             maker.height.equalTo(44.0)
+        }
+
+        collectionView.snp.makeConstraints { maker in
+            maker.top.equalTo(searchBar.snp.bottom)
+            maker.leading.trailing.equalToSuperview()
+            maker.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottomMargin)
         }
     }
 
@@ -39,4 +67,25 @@ class ListFlagsViewController: UIViewController {
     }
     */
 
+}
+
+extension ListFlagsViewController: ListAdapterDataSource {
+    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        return []
+    }
+
+    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+        return ListSingleSectionController(
+            cellClass: ListFlagCell.self,
+            configureBlock: { _, _ in
+                // do nothing
+            },
+            sizeBlock: { _, _ -> CGSize in
+                return .zero
+            })
+    }
+
+    func emptyView(for listAdapter: ListAdapter) -> UIView? {
+        return nil
+    }
 }

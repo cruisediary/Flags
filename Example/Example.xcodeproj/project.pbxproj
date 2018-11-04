@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143DBFFEFB35252750772D32 /* libPods-ExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864670DCAF9655A4F8FB1F12 /* libPods-ExampleTests.a */; };
 		DD762FF552480F53E426CCDE /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AC9DC9118242D091E1B53A /* Pods_Example.framework */; };
 		FCD8FACF218EEFA400E20544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FACE218EEFA400E20544 /* AppDelegate.swift */; };
 		FCD8FAD4218EEFA400E20544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD2218EEFA400E20544 /* Main.storyboard */; };
 		FCD8FAD6218EEFA500E20544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD5218EEFA500E20544 /* Assets.xcassets */; };
 		FCD8FAD9218EEFA500E20544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD7218EEFA500E20544 /* LaunchScreen.storyboard */; };
-		FCD8FAE4218EEFA500E20544 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAE3218EEFA500E20544 /* ExampleTests.swift */; };
 		FCD8FAFD218EF13B00E20544 /* UITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAFC218EF13B00E20544 /* UITestCase.swift */; };
 		FCD8FB00218EF18D00E20544 /* ListFlagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAFF218EF18D00E20544 /* ListFlagUITests.swift */; };
 		FCD8FB03218EF2DC00E20544 /* ListFlagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */; };
+		FCD8FB06218EF7A800E20544 /* ListFlagsViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB05218EF7A800E20544 /* ListFlagsViewControllerSpec.swift */; };
+		FCD8FB08218EFC6E00E20544 /* ListFlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,9 @@
 		13F258F0A294ED06E54DA4B9 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		24AC9DC9118242D091E1B53A /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F62B655BA5FF30DB80894B2 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		864670DCAF9655A4F8FB1F12 /* libPods-ExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A126ED3453A836FEE9039D6D /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE9AF04CB17E5A9DFD7C7338 /* Pods-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCD8FACB218EEFA400E20544 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD8FACE218EEFA400E20544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD8FAD3218EEFA400E20544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,13 +51,14 @@
 		FCD8FAD8218EEFA500E20544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCD8FADA218EEFA500E20544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCD8FADF218EEFA500E20544 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCD8FAE3218EEFA500E20544 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		FCD8FAE5218EEFA500E20544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCD8FAEA218EEFA500E20544 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD8FAF0218EEFA500E20544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCD8FAFC218EF13B00E20544 /* UITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestCase.swift; sourceTree = "<group>"; };
 		FCD8FAFF218EF18D00E20544 /* ListFlagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagUITests.swift; sourceTree = "<group>"; };
 		FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsViewController.swift; sourceTree = "<group>"; };
+		FCD8FB05218EF7A800E20544 /* ListFlagsViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsViewControllerSpec.swift; sourceTree = "<group>"; };
+		FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143DBFFEFB35252750772D32 /* libPods-ExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,8 @@
 			children = (
 				4F62B655BA5FF30DB80894B2 /* Pods-Example.debug.xcconfig */,
 				13F258F0A294ED06E54DA4B9 /* Pods-Example.release.xcconfig */,
+				AE9AF04CB17E5A9DFD7C7338 /* Pods-ExampleTests.debug.xcconfig */,
+				A126ED3453A836FEE9039D6D /* Pods-ExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -94,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				24AC9DC9118242D091E1B53A /* Pods_Example.framework */,
+				864670DCAF9655A4F8FB1F12 /* libPods-ExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,7 +146,7 @@
 		FCD8FAE2218EEFA500E20544 /* ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				FCD8FAE3218EEFA500E20544 /* ExampleTests.swift */,
+				FCD8FB04218EF78300E20544 /* ListFlags */,
 				FCD8FAE5218EEFA500E20544 /* Info.plist */,
 			);
 			path = ExampleTests;
@@ -164,6 +174,15 @@
 			isa = PBXGroup;
 			children = (
 				FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */,
+				FCD8FB07218EFC6E00E20544 /* ListFlagCell.swift */,
+			);
+			path = ListFlags;
+			sourceTree = "<group>";
+		};
+		FCD8FB04218EF78300E20544 /* ListFlags */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8FB05218EF7A800E20544 /* ListFlagsViewControllerSpec.swift */,
 			);
 			path = ListFlags;
 			sourceTree = "<group>";
@@ -194,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCD8FAF6218EEFA500E20544 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
 			buildPhases = (
+				92D99BEEAFC58EA31251E19A /* [CP] Check Pods Manifest.lock */,
 				FCD8FADB218EEFA500E20544 /* Sources */,
 				FCD8FADC218EEFA500E20544 /* Frameworks */,
 				FCD8FADD218EEFA500E20544 /* Resources */,
@@ -241,6 +261,7 @@
 					};
 					FCD8FADE218EEFA500E20544 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						TestTargetID = FCD8FACA218EEFA400E20544;
 					};
 					FCD8FAE9218EEFA500E20544 = {
@@ -297,6 +318,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		92D99BEEAFC58EA31251E19A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D68A0D4A1863A5BE2DDB2AB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +403,7 @@
 			files = (
 				FCD8FACF218EEFA400E20544 /* AppDelegate.swift in Sources */,
 				FCD8FB03218EF2DC00E20544 /* ListFlagsViewController.swift in Sources */,
+				FCD8FB08218EFC6E00E20544 /* ListFlagCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCD8FAE4218EEFA500E20544 /* ExampleTests.swift in Sources */,
+				FCD8FB06218EF7A800E20544 /* ListFlagsViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,9 +615,11 @@
 		};
 		FCD8FAF7218EEFA500E20544 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE9AF04CB17E5A9DFD7C7338 /* Pods-ExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,6 +629,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Cruz.ExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
@@ -591,9 +638,11 @@
 		};
 		FCD8FAF8218EEFA500E20544 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A126ED3453A836FEE9039D6D /* Pods-ExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

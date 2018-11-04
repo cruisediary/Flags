@@ -8,3 +8,8 @@ target 'Example' do
   pod 'SnapKit', '4.0.1'
   pod 'ReactorKit', '1.2.1'
 end
+
+target 'ExampleTests' do
+  pod 'Quick', '1.3.2'
+  pod 'Nimble', '7.3.1'
+end
