@@ -1,0 +1,43 @@
+PODS:
+  - Flags (0.3.0)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+  - ReactorKit (1.2.1):
+    - RxSwift (>= 4.0.0)
+  - RxAtomic (4.4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - Flags (from `../`)
+  - IGListKit (= 3.4.0)
+  - ReactorKit (= 1.2.1)
+  - SnapKit (= 4.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IGListKit
+    - ReactorKit
+    - RxAtomic
+    - RxSwift
+    - SnapKit
+
+EXTERNAL SOURCES:
+  Flags:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Flags: a66c270e1e1fb3ca1fd49a8f5ec43834b3e064cc
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: 3763e2557beaa4d7e1dcbfcbc8c132e5ee09562e
+
+COCOAPODS: 1.6.0.beta.1
