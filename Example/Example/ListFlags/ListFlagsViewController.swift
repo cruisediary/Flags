@@ -26,6 +26,8 @@ class ListFlagsViewController: UIViewController {
                                                                        topContentInset: 0,
                                                                        stretchToEdge: false)
         collectionView.isPrefetchingEnabled = false
+        collectionView.register(ListFlagCell.self,
+                                forCellWithReuseIdentifier: ListFlagCell.identifier)
         return collectionView
     }()
     

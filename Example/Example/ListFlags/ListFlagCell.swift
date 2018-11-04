@@ -10,6 +10,8 @@ import UIKit
 import SnapKit
 
 class ListFlagCell: UICollectionViewCell {
+    static let identifier = "ListFlagCell"
+
     var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
