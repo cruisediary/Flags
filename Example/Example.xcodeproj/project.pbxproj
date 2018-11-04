@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		DD762FF552480F53E426CCDE /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AC9DC9118242D091E1B53A /* Pods_Example.framework */; };
 		FCD8FACF218EEFA400E20544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FACE218EEFA400E20544 /* AppDelegate.swift */; };
-		FCD8FAD1218EEFA400E20544 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAD0218EEFA400E20544 /* ViewController.swift */; };
 		FCD8FAD4218EEFA400E20544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD2218EEFA400E20544 /* Main.storyboard */; };
 		FCD8FAD6218EEFA500E20544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD5218EEFA500E20544 /* Assets.xcassets */; };
 		FCD8FAD9218EEFA500E20544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD7218EEFA500E20544 /* LaunchScreen.storyboard */; };
 		FCD8FAE4218EEFA500E20544 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAE3218EEFA500E20544 /* ExampleTests.swift */; };
 		FCD8FAFD218EF13B00E20544 /* UITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAFC218EF13B00E20544 /* UITestCase.swift */; };
 		FCD8FB00218EF18D00E20544 /* ListFlagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FAFF218EF18D00E20544 /* ListFlagUITests.swift */; };
+		FCD8FB03218EF2DC00E20544 /* ListFlagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		4F62B655BA5FF30DB80894B2 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FCD8FACB218EEFA400E20544 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD8FACE218EEFA400E20544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCD8FAD0218EEFA400E20544 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCD8FAD3218EEFA400E20544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCD8FAD5218EEFA500E20544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD8FAD8218EEFA500E20544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		FCD8FAF0218EEFA500E20544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCD8FAFC218EF13B00E20544 /* UITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestCase.swift; sourceTree = "<group>"; };
 		FCD8FAFF218EF18D00E20544 /* ListFlagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagUITests.swift; sourceTree = "<group>"; };
+		FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FCD8FACE218EEFA400E20544 /* AppDelegate.swift */,
-				FCD8FAD0218EEFA400E20544 /* ViewController.swift */,
+				FCD8FB01218EF2C000E20544 /* ListFlags */,
 				FCD8FAD2218EEFA400E20544 /* Main.storyboard */,
 				FCD8FAD5218EEFA500E20544 /* Assets.xcassets */,
 				FCD8FAD7218EEFA500E20544 /* LaunchScreen.storyboard */,
@@ -156,6 +156,14 @@
 			isa = PBXGroup;
 			children = (
 				FCD8FAFF218EF18D00E20544 /* ListFlagUITests.swift */,
+			);
+			path = ListFlags;
+			sourceTree = "<group>";
+		};
+		FCD8FB01218EF2C000E20544 /* ListFlags */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8FB02218EF2DC00E20544 /* ListFlagsViewController.swift */,
 			);
 			path = ListFlags;
 			sourceTree = "<group>";
@@ -350,8 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCD8FAD1218EEFA400E20544 /* ViewController.swift in Sources */,
 				FCD8FACF218EEFA400E20544 /* AppDelegate.swift in Sources */,
+				FCD8FB03218EF2DC00E20544 /* ListFlagsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,6 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
