@@ -28,4 +28,9 @@ class ListFlagUITests: UITestCase {
         // then
         XCTAssertTrue(app.staticTexts.matching(identifier: "🇸🇪").firstMatch.exists)
     }
+
+    func testDefaultListFlags() {
+        let collectionView = app.collectionViews.firstMatch
+        XCTAssertTrue(collectionView.cells.count > 0)
+    }
 }
