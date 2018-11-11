@@ -54,6 +54,7 @@ class ListFlagsViewController: UIViewController, View {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.reactor = ListFlagsReactor()
+        navigationItem.title = "🇸🇪 Flags"
 
         // Do any additional setup after loading the view.
         view.addSubview(searchBar)
