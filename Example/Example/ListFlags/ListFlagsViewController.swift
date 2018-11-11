@@ -74,6 +74,7 @@ class ListFlagsViewController: UIViewController, View {
 
     func bind(reactor: ListFlagsReactor) {
         searchBar.rx.text
+            .distinctUntilChanged()
             .filterNil()
             .map { Reactor.Action.typing(text: $0) }
             .bind(to: reactor.action)

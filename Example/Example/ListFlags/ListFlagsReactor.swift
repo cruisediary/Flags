@@ -36,7 +36,7 @@ class ListFlagsReactor: Reactor {
         var state = state
         switch mutation {
         case .filter(let key):
-            state.countryCodes = NSLocale.isoCountryCodes.filter { $0.contains(key) }
+            state.countryCodes = NSLocale.isoCountryCodes.filter { key.isEmpty ? true : $0.contains(key) }
         }
         return state
     }
