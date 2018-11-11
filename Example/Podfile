@@ -1,0 +1,20 @@
+platform :ios, '11.0'
+inhibit_all_warnings!
+
+target 'Example' do
+  use_frameworks!
+
+  pod 'Flags', :path => '../'
+  pod 'IGListKit', '3.4.0'
+  pod 'SnapKit', '4.0.1'
+  pod 'ReactorKit', '1.2.1'
+  pod 'RxCocoa', '4.4.0'
+  pod 'RxOptional', '3.5.0'
+  pod 'RxSwift', '4.4.0'
+
+  target 'ExampleTests' do
+    inherit! :complete
+    pod 'Quick', '1.3.2'
+    pod 'Nimble', '7.3.1'
+  end
+end
