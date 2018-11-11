@@ -11,6 +11,8 @@
 		143DBFFEFB35252750772D32 /* libPods-ExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864670DCAF9655A4F8FB1F12 /* libPods-ExampleTests.a */; };
 		DD762FF552480F53E426CCDE /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AC9DC9118242D091E1B53A /* Pods_Example.framework */; };
 		FCB0AEA1219877F900AA58B7 /* ListFlagsReactorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0AEA0219877F900AA58B7 /* ListFlagsReactorSpec.swift */; };
+		FCB0AEA42198845700AA58B7 /* Flag+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0AEA32198845700AA58B7 /* Flag+Extension.swift */; };
+		FCB0AEA6219885A500AA58B7 /* Flag+ExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0AEA5219885A500AA58B7 /* Flag+ExtensionSpec.swift */; };
 		FCD8FACF218EEFA400E20544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD8FACE218EEFA400E20544 /* AppDelegate.swift */; };
 		FCD8FAD4218EEFA400E20544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD2218EEFA400E20544 /* Main.storyboard */; };
 		FCD8FAD6218EEFA500E20544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD8FAD5218EEFA500E20544 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		AE9AF04CB17E5A9DFD7C7338 /* Pods-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C788D41B3D0FC22B1C55EE61 /* Pods-Example-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-Example-ExampleTests/Pods-Example-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		FCB0AEA0219877F900AA58B7 /* ListFlagsReactorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlagsReactorSpec.swift; sourceTree = "<group>"; };
+		FCB0AEA32198845700AA58B7 /* Flag+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flag+Extension.swift"; sourceTree = "<group>"; };
+		FCB0AEA5219885A500AA58B7 /* Flag+ExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flag+ExtensionSpec.swift"; sourceTree = "<group>"; };
 		FCD8FACB218EEFA400E20544 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD8FACE218EEFA400E20544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD8FAD3218EEFA400E20544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +130,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FCB0AEA22198844600AA58B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCB0AEA32198845700AA58B7 /* Flag+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FCD8FAC2218EEFA400E20544 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				FCD8FACE218EEFA400E20544 /* AppDelegate.swift */,
+				FCB0AEA22198844600AA58B7 /* Extensions */,
 				FCD8FB01218EF2C000E20544 /* ListFlags */,
 				FCD8FAD2218EEFA400E20544 /* Main.storyboard */,
 				FCD8FAD5218EEFA500E20544 /* Assets.xcassets */,
@@ -167,6 +180,7 @@
 			children = (
 				FCD8FB04218EF78300E20544 /* ListFlags */,
 				FCD8FAE5218EEFA500E20544 /* Info.plist */,
+				FCB0AEA5219885A500AA58B7 /* Flag+ExtensionSpec.swift */,
 			);
 			path = ExampleTests;
 			sourceTree = "<group>";
@@ -473,6 +487,7 @@
 				FCD8FACF218EEFA400E20544 /* AppDelegate.swift in Sources */,
 				FCD8FB03218EF2DC00E20544 /* ListFlagsViewController.swift in Sources */,
 				FCD8FB0A218EFE3F00E20544 /* ListFlagsReactor.swift in Sources */,
+				FCB0AEA42198845700AA58B7 /* Flag+Extension.swift in Sources */,
 				FCD8FB10218F07C900E20544 /* ListFlagsModel.swift in Sources */,
 				FCD8FB08218EFC6E00E20544 /* ListFlagCell.swift in Sources */,
 				FCD8FB0E218F060600E20544 /* ListFlagSectionController.swift in Sources */,
@@ -485,6 +500,7 @@
 			files = (
 				FCD8FB06218EF7A800E20544 /* ListFlagsViewControllerSpec.swift in Sources */,
 				FCB0AEA1219877F900AA58B7 /* ListFlagsReactorSpec.swift in Sources */,
+				FCB0AEA6219885A500AA58B7 /* Flag+ExtensionSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
