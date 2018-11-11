@@ -12,7 +12,7 @@ import ReactorKit
 import RxSwift
 
 class ListFlagsReactor: Reactor {
-    var flags = NSLocale.isoCountryCodes.compactMap { Flag(countryCode: $0) }
+    let flags = NSLocale.isoCountryCodes.compactMap { Flag(countryCode: $0) }
 
     enum Action {
         case typing(text: String)
@@ -39,7 +39,11 @@ class ListFlagsReactor: Reactor {
         var state = state
         switch mutation {
         case .filter(let key):
-            state.flags = flags.filter { key.isEmpty ? true : [$0.countryCode, $0.countryName].contains(key) }
+            if key.isEmpty {
+                state.flags = flags
+            } else {
+                state.flags = flags.filter { $0.countryCode.contains(key) || $0.countryName?.contains(key) ?? false }
+            }
         }
         return state
     }
