@@ -63,6 +63,17 @@ class ListFlagsReactorSpec: QuickSpec {
                         .toEventually(beFalse())
                 }
             }
+
+            context("when 'SWEDEN' typing action") {
+                beforeEach {
+                    sut.action.onNext(.typing(text: "SWEDEN"))
+                }
+
+                it("should filter 'SE' country code") {
+                    expect(sut.currentState.flags.first?.countryCode)
+                        .toEventually(equal("SE"))
+                }
+            }
         }
     }
 }

@@ -69,4 +69,16 @@ class ListFlagUITests: UITestCase {
         // then
         XCTAssertTrue(app.staticTexts.matching(identifier: "🇸🇪 Sweden").firstMatch.exists)
     }
+
+    func testFindSwedenFlagWhenTypingUpperCaseTextSWEDEN() {
+        // given
+        let searchField = app.searchFields.firstMatch
+
+        // when
+        searchField.tap()
+        searchField.typeText("SWEDEN")
+
+        // then
+        XCTAssertTrue(app.staticTexts.matching(identifier: "🇸🇪 Sweden").firstMatch.exists)
+    }
 }
