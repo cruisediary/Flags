@@ -26,7 +26,7 @@ class ListFlagUITests: UITestCase {
         searchField.typeText("SE")
 
         // then
-        XCTAssertTrue(app.staticTexts.matching(identifier: "🇸🇪").firstMatch.exists)
+        XCTAssertTrue(app.staticTexts.matching(identifier: "🇸🇪 Sweden").firstMatch.exists)
     }
 
     func testDefaultListFlags() {
