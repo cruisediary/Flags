@@ -26,8 +26,19 @@ class ListFlagsReactorSpec: QuickSpec {
                 }
 
                 it("countryCodes count should greater than 254") {
-                    expect(sut.currentState.countryCodes.count)
+                    expect(sut.currentState.flags.count)
                         .toEventually(beGreaterThan(254))
+                }
+            }
+
+            context("when country name 'Sweden' typing action") {
+                beforeEach {
+                    sut.action.onNext(.typing(text: "Sweden"))
+                }
+
+                it("should filter 'SE' country code") {
+                    expect(sut.currentState.flags.first?.countryCode)
+                        .toEventually(equal("SE"))
                 }
             }
         }

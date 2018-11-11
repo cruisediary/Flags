@@ -81,8 +81,8 @@ class ListFlagsViewController: UIViewController, View {
             .disposed(by: disposeBag)
 
         reactor.state
-            .map { $0.countryCodes }
-            .map { $0.compactMap { FlagDiffable(flag: Flag(countryCode: $0)) } }
+            .map { $0.flags }
+            .map { $0.compactMap { FlagDiffable(flag: $0) }}
             .bind(to: adapter.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
     }

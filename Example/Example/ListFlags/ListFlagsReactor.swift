@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Flags
 import ReactorKit
 import RxSwift
 
 class ListFlagsReactor: Reactor {
+    var flags = NSLocale.isoCountryCodes.compactMap { Flag(countryCode: $0) }
+
     enum Action {
         case typing(text: String)
     }
@@ -20,10 +23,10 @@ class ListFlagsReactor: Reactor {
     }
 
     struct State {
-        var countryCodes: [String]
+        var flags: [Flag]
     }
 
-    var initialState = State(countryCodes: NSLocale.isoCountryCodes)
+    lazy var initialState = State(flags: flags)
 
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
@@ -36,7 +39,7 @@ class ListFlagsReactor: Reactor {
         var state = state
         switch mutation {
         case .filter(let key):
-            state.countryCodes = NSLocale.isoCountryCodes.filter { key.isEmpty ? true : $0.contains(key) }
+            state.flags = flags.filter { key.isEmpty ? true : [$0.countryCode, $0.countryName].contains(key) }
         }
         return state
     }
