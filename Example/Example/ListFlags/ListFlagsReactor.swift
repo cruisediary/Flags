@@ -42,7 +42,10 @@ class ListFlagsReactor: Reactor {
             if key.isEmpty {
                 state.flags = flags
             } else {
-                state.flags = flags.filter { $0.countryCode.contains(key) || $0.countryName?.contains(key) ?? false }
+                state.flags = flags.filter {
+                    $0.countryCode.lowercased().contains(key.lowercased()) ||
+                    $0.countryName?.lowercased().contains(key.lowercased()) ?? false
+                }
             }
         }
         return state
