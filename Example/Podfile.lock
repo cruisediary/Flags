@@ -1,5 +1,5 @@
 PODS:
-  - Flags (0.3.0)
+  - Flags (0.3.1)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
   - IGListKit/Default (3.4.0):
@@ -47,7 +47,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Flags: a66c270e1e1fb3ca1fd49a8f5ec43834b3e064cc
+  Flags: 09f4fd78b497a1baeb27f35f4af8d5461beb5f7f
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
@@ -58,6 +58,6 @@ SPEC CHECKSUMS:
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 1d88714b0b3b41d12952e04f4eed67603083b2e3
+PODFILE CHECKSUM: ac080b931e68ee44b1bf8a9b95b6a3531ad2e259
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.6.0.beta.2
