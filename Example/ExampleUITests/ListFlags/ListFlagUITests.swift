@@ -33,4 +33,16 @@ class ListFlagUITests: UITestCase {
         let collectionView = app.collectionViews.firstMatch
         XCTAssertTrue(collectionView.cells.count > 0)
     }
+
+    func testFindSwedenFlagWhenTypingTextSweden() {
+        // given
+        let searchField = app.searchFields.firstMatch
+
+        // when
+        searchField.tap()
+        searchField.typeText("Sweden")
+
+        // then
+        XCTAssertTrue(app.staticTexts.matching(identifier: "🇸🇪 Sweden").firstMatch.exists)
+    }
 }
