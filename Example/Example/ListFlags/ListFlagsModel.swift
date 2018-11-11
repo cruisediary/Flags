@@ -25,7 +25,7 @@ class FlagDiffable: ListDiffable {
     }
 
     var text: String? {
-        return Flag(countryCode: countryCode)?.emoji
+        return Flag(countryCode: countryCode)?.emojiWithName
     }
 
     init?(flag: FlagType?) {
