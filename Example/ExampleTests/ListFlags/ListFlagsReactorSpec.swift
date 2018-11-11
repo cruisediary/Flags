@@ -41,6 +41,28 @@ class ListFlagsReactorSpec: QuickSpec {
                         .toEventually(equal("SE"))
                 }
             }
+
+            context("when 'S' typing action") {
+                beforeEach {
+                    sut.action.onNext(.typing(text: "S"))
+                }
+
+                it("flags should not be empty") {
+                    expect(sut.currentState.flags.isEmpty)
+                        .toEventually(beFalse())
+                }
+            }
+
+            context("when 'W' typing action") {
+                beforeEach {
+                    sut.action.onNext(.typing(text: "W"))
+                }
+
+                it("flags should not be empty") {
+                    expect(sut.currentState.flags.isEmpty)
+                        .toEventually(beFalse())
+                }
+            }
         }
     }
 }
