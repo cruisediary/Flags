@@ -8,7 +8,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Codecov](https://img.shields.io/codecov/c/github/cruisediary/Flags.svg)](https://codecov.io/gh/cruisediary/Flags)
 
-![flags](README/flags.jpg)
+![flags](README/flags.gif)
 
 ## Usage
 ```swift
