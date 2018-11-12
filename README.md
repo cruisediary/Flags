@@ -21,6 +21,9 @@ let countryImage = UIImageView()
 countryImage.image = flag?.image // 🇸🇪 to image
 ```
 
+## Example
+- [Flags](https://github.com/cruisediary/Flags/tree/master/Example) - Flags for iOS Rxswift, ReactorKit and IGListKit example
+
 ## Requirements
 Flags is written in  Xcode 10, Swift 4.2, iOS 8.0 Required
 
