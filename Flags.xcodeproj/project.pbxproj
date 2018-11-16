@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3E20D5219F184100C3DA1F /* Flag+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E20D4219F184100C3DA1F /* Flag+Country.swift */; };
 		FCF2F9DD217789F2003F958A /* Flags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF2F9D3217789F2003F958A /* Flags.framework */; };
 		FCF2F9E2217789F2003F958A /* FlagSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2F9E1217789F2003F958A /* FlagSpec.swift */; };
 		FCF2F9E4217789F2003F958A /* Flags.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF2F9D6217789F2003F958A /* Flags.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC3E20D4219F184100C3DA1F /* Flag+Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flag+Country.swift"; sourceTree = "<group>"; };
 		FCF2F9D3217789F2003F958A /* Flags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF2F9D6217789F2003F958A /* Flags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flags.h; sourceTree = "<group>"; };
 		FCF2F9D7217789F2003F958A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				FCF2F9EE21778A3C003F958A /* Flag+Emoji.swift */,
 				FCF2F9EF21778A3C003F958A /* Flag+UIImage.swift */,
 				FCF2F9F021778A3C003F958A /* Flag.swift */,
+				FC3E20D4219F184100C3DA1F /* Flag+Country.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				FCF2F9F121778A3C003F958A /* Flag+Emoji.swift in Sources */,
 				FCF2F9F321778A3C003F958A /* Flag.swift in Sources */,
+				FC3E20D5219F184100C3DA1F /* Flag+Country.swift in Sources */,
 				FCF2F9F221778A3C003F958A /* Flag+UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -379,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -35,6 +35,10 @@ class FlagSpec: QuickSpec {
                     it("image should not be nil") {
                         expect(sut?.image).toNot(beNil())
                     }
+
+                    it("country name should not be nil") {
+                        expect(sut?.countryName).toNot(beNil())
+                    }
                 }
                 
                 context("when country code is lowercased \(countryCode.lowercased())") {

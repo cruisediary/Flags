@@ -1,6 +1,12 @@
+//
+//  Flag.swift
+//  Flags
+//
+//  Created by Cruz on 10/10/2018.
+//  Copyright © 2018 Cruz. All rights reserved.
+//
+
 public struct Flag {
-    static var size = CGSize(width: 40, height: 40)
-    
     public let countryCode: String
     
     public init?(countryCode: String) {
