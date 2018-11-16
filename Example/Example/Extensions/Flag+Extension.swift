@@ -9,10 +9,6 @@
 import Flags
 
 extension Flag {
-    var countryName: String? {
-        return Locale(identifier: "en_US").localizedString(forRegionCode: countryCode)
-    }
-
     var emojiWithName: String {
         guard let countryName = countryName else { return emoji }
         return emoji + " " + countryName

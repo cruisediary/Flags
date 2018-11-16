@@ -1,5 +1,5 @@
 PODS:
-  - Flags (0.3.1)
+  - Flags (0.4.0)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
   - IGListKit/Default (3.4.0):
@@ -47,7 +47,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Flags: 09f4fd78b497a1baeb27f35f4af8d5461beb5f7f
+  Flags: 3d2caa5d3ce49a08580fdf477d07c52fb5463a45
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
