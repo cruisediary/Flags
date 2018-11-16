@@ -17,8 +17,12 @@ let flag = Flag(countryCode: "SE")
 let countryLabel = UILabel()
 countryLabel.text = flag?.emoji // 🇸🇪
 
+let countryNameLabel = UILabel()
+countryNameLabel.text = flag?.countryName // Sweden
+
 let countryImage = UIImageView()
 countryImage.image = flag?.image // 🇸🇪 to image
+
 ```
 
 ## Example
@@ -37,7 +41,7 @@ pod "Flags"
 
 ### Carthage
 ```
-github "cruisediary/Flags" ~> 0.3.1
+github "cruisediary/Flags" ~> 0.4.0
 ```
 
 ## ❤️ Contribution
