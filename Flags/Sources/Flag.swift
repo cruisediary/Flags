@@ -1,5 +1,4 @@
 public struct Flag {
-    static var size = CGSize(width: 40, height: 40)
     
     public let countryCode: String
     
