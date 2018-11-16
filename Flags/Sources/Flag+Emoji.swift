@@ -1,3 +1,11 @@
+//
+//  Flag+Emoji.swift
+//  Flags
+//
+//  Created by Cruz on 10/10/2018.
+//  Copyright © 2018 Cruz. All rights reserved.
+//
+
 public extension Flag {
     public var emoji: String {
         let base = 127397
