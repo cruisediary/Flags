@@ -11,7 +11,7 @@ import Flags
 import IGListKit
 
 class ListFlagSectionController: ListSectionController {
-    var flag: FlagDiffable?
+    var model: FlagDiffable?
 
     override func sizeForItem(at index: Int) -> CGSize {
         guard let context = collectionContext else { return .zero }
@@ -19,17 +19,19 @@ class ListFlagSectionController: ListSectionController {
     }
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = collectionContext?.dequeueReusableCell(of: ListFlagCell.self,
-                                                                withReuseIdentifier: ListFlagCell.identifier,
-                                                                for: self,
-                                                                at: index) as? ListFlagCell else {
+        guard let cell = collectionContext?.dequeueReusableCell(
+            of: ListFlagCell.self,
+            withReuseIdentifier: ListFlagCell.identifier,
+            for: self,
+            at: index) as? ListFlagCell else {
             fatalError()
         }
-        cell.titleLabel.text = flag?.text
+        cell.flag = model?.flag.emoji
+        cell.name = model?.flag.countryName
         return cell
     }
 
     override func didUpdate(to object: Any) {
-        flag = object as? FlagDiffable
+        model = object as? FlagDiffable
     }
 }

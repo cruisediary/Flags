@@ -11,14 +11,17 @@ import Flags
 import IGListKit
 import RxCocoa
 import RxSwift
+import RxIGListKit
 
 protocol FlagType {
+    var emoji: String { get }
     var countryCode: String { get }
+    var countryName: String? { get }
 }
 
 extension Flag: FlagType {}
 
-class FlagDiffable: ListDiffable {
+class FlagDiffable: SectionModelDiffable {
     var flag: FlagType
     var countryCode: String {
         return flag.countryCode
@@ -43,31 +46,5 @@ class FlagDiffable: ListDiffable {
         }
 
         return self === object
-    }
-}
-
-// RxIGListKit
-final class DataSource: NSObject, ListAdapterDataSource, RxListAdapterDataSource {
-    typealias Element = [FlagDiffable]
-
-    var elements: Element = []
-
-    func listAdapter(_ adapter: ListAdapter, observedEvent: Event<[FlagDiffable]>) {
-        if case .next(let flags) = observedEvent {
-            elements = flags
-            adapter.performUpdates(animated: true)
-        }
-    }
-
-    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return elements as [ListDiffable]
-    }
-
-    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return ListFlagSectionController()
-    }
-
-    func emptyView(for listAdapter: ListAdapter) -> UIView? {
-        return nil
     }
 }

@@ -14,6 +14,7 @@ import RxCocoa
 import RxOptional
 import RxSwift
 import SnapKit
+import RxIGListKit
 
 class ListFlagsViewController: UIViewController, View {
     var searchBar: UISearchBar = {
@@ -27,13 +28,8 @@ class ListFlagsViewController: UIViewController, View {
                               viewController: self,
                               workingRangeSize: 2)
         adapter.collectionView = collectionView
-        adapter.rx
-            .setDataSource(dataSource)
-            .disposed(by: disposeBag)
         return adapter
     }()
-
-    let dataSource = DataSource()
 
     var collectionView: ListCollectionView = {
         let collectionView = ListCollectionView()
@@ -84,8 +80,14 @@ class ListFlagsViewController: UIViewController, View {
         reactor.state
             .map { $0.flags }
             .map { $0.compactMap { FlagDiffable(flag: $0) }}
-            .bind(to: adapter.rx.items(dataSource: dataSource))
+            .bind(to: adapter.rx.objects(for: dataSource))
             .disposed(by: disposeBag)
+    }
+
+    private var dataSource: RxListAdapterDataSource<FlagDiffable> {
+        RxListAdapterDataSource<FlagDiffable>(sectionControllerProvider: { _,_ in
+            ListFlagSectionController()
+        })
     }
 
     /*
