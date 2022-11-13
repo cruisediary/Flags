@@ -1,46 +1,60 @@
 PODS:
   - Flags (0.4.0)
-  - IGListKit (3.4.0):
-    - IGListKit/Default (= 3.4.0)
-  - IGListKit/Default (3.4.0):
-    - IGListKit/Diffing
-  - IGListKit/Diffing (3.4.0)
+  - HypeUI (0.1.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+    - SnapKit (~> 5.0.0)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
   - Nimble (7.3.1)
   - Quick (1.3.2)
-  - ReactorKit (1.2.1):
-    - RxSwift (>= 4.0.0)
-  - RxAtomic (4.4.0)
-  - RxCocoa (4.4.0):
-    - RxSwift (~> 4.0)
-  - RxOptional (3.5.0):
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.4.0):
-    - RxAtomic (~> 4.4)
-  - SnapKit (4.0.1)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxIGListKit (2.0.2):
+    - IGListKit (~> 4.0.0)
+    - RxCocoa (~> 6.0)
+  - RxOptional (5.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SnapKit (5.0.1)
+  - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - Flags (from `../`)
-  - IGListKit (= 3.4.0)
+  - HypeUI (= 0.1.0)
+  - IGListKit (= 4.0.0)
   - Nimble (= 7.3.1)
   - Quick (= 1.3.2)
-  - ReactorKit (= 1.2.1)
-  - RxCocoa (= 4.4.0)
-  - RxOptional (= 3.5.0)
-  - RxSwift (= 4.4.0)
-  - SnapKit (= 4.0.1)
+  - ReactorKit (= 3.2.0)
+  - RxCocoa (= 6.5.0)
+  - RxIGListKit (= 2.0.2)
+  - RxOptional (= 5.0.0)
+  - RxSwift (= 6.5.0)
+  - SnapKit (= 5.0.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
+    - HypeUI
+    - IGListDiffKit
     - IGListKit
     - Nimble
     - Quick
     - ReactorKit
-    - RxAtomic
     - RxCocoa
+    - RxIGListKit
     - RxOptional
+    - RxRelay
     - RxSwift
     - SnapKit
+    - WeakMapTable
 
 EXTERNAL SOURCES:
   Flags:
@@ -48,16 +62,20 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flags: 3d2caa5d3ce49a08580fdf477d07c52fb5463a45
-  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  HypeUI: 462f4d0e149b8ef201983f16fdaf15b2b908ca10
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
-  ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
-  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
-  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
-  RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
-  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
-  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxIGListKit: 15a701dfdec1d625ce3c0bb412d5d1dcdb528b18
+  RxOptional: cb0b05f0270854eb8ac322c4eb298c4945469fab
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 53ece58104272905c4000574b7ab05187ed430bb
+PODFILE CHECKSUM: 237698a756138d58ecc01f9950fe51d6ddd3d54d
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.10.0
